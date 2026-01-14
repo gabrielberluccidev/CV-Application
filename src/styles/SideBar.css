@@ -1,0 +1,25 @@
+:root {
+    /* light theme */
+    --sidebar-bg-color: #f5f5f5;
+    --sidebar-text-color: #333;
+    /* light theme */
+    --sidebar-bg-color: #f7f7f7;
+    --sidebar-text-color: #333333;
+    --sidebar-border-color: #e0e0e0;
+}
+
+body.dark {
+    /* dark theme */
+    --sidebar-bg-color: #252525;
+    --sidebar-text-color: #ffffff;
+    --sidebar-border-color: #3d3d3d;
+}
+
+.SideBar {
+    background-color: var(--sidebar-bg-color);
+    color: var(--sidebar-text-color);
+    width: 15%;
+    height: 100vh;
+    border-right: 1px solid var(--sidebar-border-color);
+    padding: 20px;
+}
