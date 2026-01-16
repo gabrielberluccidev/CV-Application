@@ -1,0 +1,60 @@
+.resume-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 75%;
+    height: 100%;
+    background-color: #f3f4f6;
+    padding: 40px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.resume-preview {
+    width: 8.5in;
+    min-height: 11in;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1in;
+    box-sizing: border-box;
+}
+
+.resume-header {
+    text-align: center;
+    border-bottom: 2px solid #f3f4f6;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.resume-header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.resume-header p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.resume-section {
+    margin-bottom: 20px;
+}
+
+.resume-section h2 {
+    border-bottom: 2px solid #f3f4f6;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.resume-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.resume-item p {
+    margin: 2px 0;
+}
