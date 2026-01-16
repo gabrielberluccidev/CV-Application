@@ -1,21 +1,6 @@
-import { useState } from "react";
 import "../styles/GeneralForm.css";
 
-function PersonalInfo() {
-  const [info, setInfo] = useState({
-    fullName: "",
-    mail: "",
-    phone: "",
-  });
-
-  const handleChange = (e) => {
-    const { id, value } = e.target;
-    setInfo((prevInfo) => ({
-      ...prevInfo,
-      [id]: value,
-    }));
-  };
-
+function PersonalInfo({ onChange, info }) {
   return (
     <form className="form">
       <h3>Personal Information</h3>
@@ -26,7 +11,7 @@ function PersonalInfo() {
         <label htmlFor="fullName">Full Name</label>
         <input
           placeholder="Your name"
-          onChange={handleChange}
+          onChange={onChange}
           value={info.fullName}
           required
           id="fullName"
@@ -37,7 +22,7 @@ function PersonalInfo() {
         <label htmlFor="email">Email</label>
         <input
           placeholder="Your email"
-          onChange={handleChange}
+          onChange={onChange}
           value={info.email}
           required
           id="email"
@@ -49,7 +34,7 @@ function PersonalInfo() {
         <label htmlFor="phone">Phone</label>
         <input
           placeholder="Your phone"
-          onChange={handleChange}
+          onChange={onChange}
           value={info.phone}
           id="phone"
           type="tel"
